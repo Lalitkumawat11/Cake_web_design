@@ -2,40 +2,37 @@
     margin: 0px;
     padding: 0px 0px;
     box-sizing: border-box;
-    font-family:Arial;
-}
-.shrink img {
-    transition: 1s ease;
-    }
     
-    .shrink img:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition: 1s ease;
     }
-.uv:hover{
-    opacity: 0.5;
+
+  
+.cent{
+    text-align: center;
+  }
+
+.navbar{
+  background-color: #1c2331
 }
+.hover01{
+  overflow: hidden;
+}
+.navbar a{
+  color: whitesmoke;
+}
+.futabove{
+    margin: 0;
+  }
+.occasion{
+  background-color: rgb(233, 248, 237);
+  padding: 45px 0px;
+}
+
 h5{
     text-align: center;
 }
-.grow img{
-    transition: 1s ease;
-    }
-    
-    .grow img:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 1s ease;
-    }
-
 .abc{
     border: 1px solid white;
     background-color: white;
-    margin: 10px 10px;
-    padding: 5px;
 }
 .under{
     background-color: aliceblue;
@@ -108,26 +105,15 @@ h5{
 .bell img {
     border-radius: 20%;
   }
-.uu img {
-    border-radius: 6%;
-  }
-.noe img {
-    border-radius: 6%;
-  }
-.uv img{
-    border-radius: 4%;   
-}
 .trend{
-    background-color: antiquewhite;
+    background-color: rgb(247, 237, 225);
     padding: 25px 0px;
 }
 .design{
     background-color: rgb(220, 241, 241);
     padding: 25px 0px;
 }
-.design img{
-    border-radius: 4%; 
-}
+
 .sizee{
     font-size: 20px;
 }
@@ -196,4 +182,41 @@ input[type=text], select, textarea {
   .imgview img{
     border-radius: 4%;
   }
+
+
   
+
+
+  figure {
+
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+  }
+  figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+  }
+  
+  .hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+  }
+  .hover01 figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+/* Blur */
+.hover07 figure img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+.hover07 figure:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}

@@ -8,47 +8,79 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
   <div class="main">
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/bakingo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="d-flex align-items-center me-auto">
-            <div class="dropdown ms-2">
-              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Select City
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">City 1</a></li>
-                <li><a class="dropdown-item" href="#">City 2</a></li>
-              </ul>
-            </div>
+    <div class="aboutnav">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/bakingo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Desserts
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">All desserts</a></li>
+                  <li><a class="dropdown-item" href="#">Jar Cakes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Theme Cake
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Baby Shower Cake</a></li>
+                  <li><a class="dropdown-item" href="#">Princess Cake</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="int">By Flavours</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Chocolate Cakes</a></li>
+                  <li><a class="dropdown-item" href="#">Butterscotch Cakes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trending Cakes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Bestsellers</a></li>
+                  <li><a class="dropdown-item" href="#">Gourmet Cakes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
-          
-          <form class="d-flex mx-auto my-2 my-lg-0" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search for Cakes" aria-label="Search">
-          </form>
-          
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-pin-map"></i><br>Track Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-basket3"></i><br>Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-person"></i><br>Sign In</a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </nav>  
-    
+      </nav>
+    </div>
     <div class="abc">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -58,7 +90,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/bns-creative-cakes000.jpg" class="d-block w-100" alt="...">
+            <img src="images/bns-celebration-cakes000.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="images/bns-celebration-cakes000.jpg" class="d-block w-100" alt="...">
@@ -77,134 +109,97 @@
         </button>
       </div>
     </div>
-    <div class="managehh">
+    <div class="managehh cent">
       <div class="container">
         <div class="row">
-          <h1>Surprise Your Loved One</h1>
-          <div class="uv col-lg-3 col-md-6 col-sm-12 mt-5"><a href="regular.html"><img src="images/regular_cake_1.webp" alt="" class="img-fluid"></a> <h5>Regular cake</h5></div>
-          <div class="uv col-lg-3 col-md-6 col-sm-12 mt-5"><a href="link.html"><img src="images/kids_cake.webp" alt="" class="img-fluid" ></a><h5>Theme cake</h5></div>
-          <div class="uv col-lg-3 col-md-6 col-sm-12 mt-5"><a href="regular.html"><img src="images/photo_cake_desktop.webp" alt="" class="img-fluid"></a><h5>Photo cake</h5></div>
-          <div class="uv col-lg-3 col-md-6 col-sm-6 mt-5"><a href="gourmentcake.html"><img src="images/gourmet_cake_0.webp" alt="" class="img-fluid"></a><h5>Gourmet cake</h5></div>
+          <h1>SURPRISE YOUR LOVED ONE</h1>
+          <div class="uv hover01 col-lg-3 col-md-6 col-sm-12 mt-5"><a href="viewall.html"><figure><img src="images/28.webp" alt="" class="img-fluid" ></figure></a><h5>REGULAR CAKE</h5></div>
+          <div class="uv hover01 col-lg-3 col-md-6 col-sm-12 mt-5"><a href="viewall.html"><figure><img src="images/jungle-theme-cake.webp" alt="" class="img-fluid " ></figure></a><h5>THEME CAKE</h5></div>
+          <div class="uv hover01 col-lg-3 col-md-6 col-sm-12 mt-5"><a href="viewall.html"><figure><img src="images/viewall2.webp" alt="" class="img-fluid "></figure></a><h5>PHOTO CAKE</h5></div>
+          <div class="hover01 col-lg-3 col-md-6 col-sm-6 mt-5"><a href="viewall.html"><figure><img src="images/7.webp" alt="" class="img-fluid"></figure></a><h5>GOURMENT CAKE</h5></div>
         </div>
       </div>
     </div>
-    <div class="trend managehh">
+    <div class="trend managehh cent ">
       <div class="container">
-        <h1 style="display: inline;">Trending Cakes</h1>
-        <span class="orderboxy" style="float: right;"><a href="viewall.html">VIEW ALL</a></span>
+        <h1 style="display: inline;">TRENDING CAKES</h1>
         <div class="row">
-          <div class="shrink uu col-lg-4 col-md-6 col-sm-12 mt-5"><a href="#"> <img src="images/2.0.webp" alt="" class="img-fluid"></a><h5>Photo Pulling Cakes</h5></div>
-          <div class="shrink uu  col-lg-4 col-md-6 col-sm-12 mt-5"><a href="#"> <img src="images/2.1.webp" alt="" class="img-fluid"></a><h5>Pinata Cakes</h5></div>
-          <div class="shrink uu  col-lg-4 col-md-6 col-sm-12 mt-5"><a href="#"><img src="images/2.2.webp" alt="" class="img-fluid"></a><h5>Pull Me Up Cakes</h5></div>
+          <div class="hover07 uu col-lg-4 col-md-4 col-sm-4 mt-5 "><a href="#"><figure><img src="images/2.0.webp" alt="" class="img-fluid"></figure></a><h5>PHOTO PILLING CAKES</h5></div>
+          <div class="hover07 uu  col-lg-4 col-md-4 col-sm-4 mt-5"><a href="#"><figure><img src="images/2.1.webp" alt="" class="img-fluid "></figure></a><h5>PINATA CAKES</h5></div>
+          <div class="hover07 uu  col-lg-4 col-md-4 col-sm-4 mt-5"><a href="#"><figure><img src="images/2.2.webp" alt="" class="img-fluid"></figure></a><h5>PULL ME UP CAKES</h5></div>
         
-            <div class="shrink noe  col-lg-6 col-md-12 col-sm-12"><a href="#"><img src="images/2.3.webp" alt="" class="img-fluid"></a><h5>Bomb Cakes</h5></div>
-            <div class="shrink noe  col-lg-6 col-md-12 col-sm-12"><a href="#"><img src="images/2.4.webp" alt="" class="img-fluid"></a><h5>Cake Surprise Box</h5></div>
+            <div class="hover07 noe  col-lg-6 col-md-6 col-sm-6 mt-4"><a href="#"><figure><img src="images/2.3.webp" alt="" class="img-fluid "></figure></a><h5>BOMB CAKES</h5></div>
+            <div class="hover07 noe  col-lg-6 col-md-6 col-sm-6 mt-4"><a href="#"><figure><img src="images/2.4.webp" alt="" class="img-fluid"></figure></a><h5>CAKE SURPRISE BOX</h5></div>
         </div>
       </div>
     </div>
-    <div class="linkbar managehh">
+    <div class="linkbar managehh cent">
       <div class="container">
         <div class="row">
-          <h1>Experience Flavours</h1>
-          <div class="links col-lg-2 col-md-12 col-sm-12 mt-5">
-            <span class="orderboxy"><a href="#">Chocolate</a></span><br><br>
+          <h1>EXPERENSED FLAVOURS</h1>
+          <div class="links col-lg-2 col-md-6 col-sm-6 mt-5">
+            <span class="orderboxy"><a href="#">CHOCOLATE</a></span><br><br>
           </div>
-          <div class="links col-lg-2 col-md-12 col-sm-12 mt-5">
-            <span class="orderboxy"><a href="#">Redvalvte</a></span><br><br>
+          <div class="links col-lg-2 col-md-6 col-sm-6 mt-5">
+            <span class="orderboxy"><a href="#">REDVALVET</a></span><br><br>
           </div>
-          <div class="links col-lg-2 col-md-12 col-sm-12 mt-5">
-            <span class="orderboxy"><a href="#">Strawberry</a></span><br><br>
+          <div class="links col-lg-2 col-md-6 col-sm-6 mt-5">
+            <span class="orderboxy"><a href="#">STRAWBERRY</a></span><br><br>
           </div>
-          <div class="links col-lg-2 col-md-12 col-sm-12 mt-5">
-            <span class="orderboxy"><a href="#">Black forest</a></span><br><br>
+          <div class="links col-lg-2 col-md-6 col-sm-6 mt-5">
+            <span class="orderboxy"><a href="#">BLACK FOREST</a></span><br><br>
           </div>
-          <div class="links col-lg-2 col-md-12 col-sm-12 mt-5">
-          <span class="orderboxy"><a href="#">Pineapple</a></span><br><br>
+          <div class="links col-lg-2 col-md-6 col-sm-6 mt-5">
+          <span class="orderboxy"><a href="#">PINEAPPLE</a></span><br><br>
           </div>
-          <div class="links col-lg-2 col-md-12 col-sm-12 mt-5">
-            <span class="orderboxy"><a href="#">Butterscotch</a></span><br><br>
+          <div class="links col-lg-2 col-md-6 col-sm-6 mt-5">
+            <span class="orderboxy"><a href="#">BUTTERSCOTCH</a></span><br><br>
           </div>
         </div>
       </div>
-    <div class="design managehh">
+    <div class="design managehh cent">
       <div class="container">
         <div class="row">
-            <h1>Designer cake</h1>
-            <div class="shrink col-lg-4 col-md-6 col-sm-12 mt-5">
-              <a href="#"><img src="images/barbie_cake_desktop.webp" alt="" class="img-fluid"></a>
-              <h5>Barbie Cake</h5>
+            <h1>DESIGNER CAKE</h1>
+            <div class="hover01 col-lg-4 col-md-6 col-sm-12 mt-5">
+              <a href="#"><figure><img src="images/barbie_cake_desktop.webp" alt="" class="img-fluid "></figure></a>
+              <h5>BARBIE CAKE</h5>
             </div>
-            <div class="shrink col-lg-4 col-md-6 col-sm-12 mt-5">
-              <a href="#"><img src="images/baby_shower_cake_desktop.webp" alt="" class="img-fluid"></a>
-              <h5>Baby Shower Cakes</h5>
+            <div class="hover01 col-lg-4 col-md-6 col-sm-12 mt-5">
+              <a href="#"><figure><img src="images/baby-shower_0.webp" alt="" class="img-fluid"></figure></a>
+              <h5>BABY SHOWER CAKES</h5>
             </div>
-            <div class="shrink col-lg-4 col-md-6 col-sm-12 mt-5">
-              <a href="#"><img src="images/rainbow_cakes_desktop.webp" alt="" class="img-fluid"></a>
-              <h5>Rainbow Cakes</h5>
+            <div class="hover01 col-lg-4 col-md-6 col-sm-12 mt-5">
+              <a href="#"><figure><img src="images/rainbow_cakes_desktop.webp" alt="" class="img-fluid "></figure></a>
+              <h5>RAINBOW CAKES</h5>
             </div>
-            <div class="shrink col-lg-4 col-md-6 col-sm-12">
-              <a href="#"><img src="images/cartoon_cakes_desktop.webp" alt="" class="img-fluid"></a>
-              <h5>Cartoon Cake</h5>
+            <div class="hover01 col-lg-4 col-md-6 col-sm-12  ">
+              <a href="#"><figure><img src="images/cartoon-cake_0.webp" alt="" class="img-fluid"></figure></a>
+              <h5>CARTOON CAKE</h5>
             </div>
-            <div class="shrink col-lg-4 col-md-6 col-sm-12">
-                <a href="#"><img src="images/jungle_theme_cake_desktop.webp" alt="" class="img-fluid"></a>
-                <h5>Jungle Theme Cakes</h5>
+            <div class="hover01 col-lg-4 col-md-6 col-sm-12 ">
+                <a href="#"><figure><img src="images/jungle_theme_cake_desktop.webp" alt="" class="img-fluid"></figure></a>
+                <h5>JUNGLE THEME CAKES</h5>
             </div>
-            <div class="shrink col-lg-4 col-md-6 col-sm-12">
-                <a href="#"><img src="images/number_cake_desktop.webp" alt="" class="img-fluid"></a>
-                <h5>Number Cakes</h5>
+            <div class="hover01 col-lg-4 col-md-6 col-sm-12 ">
+                <a href="#"><figure><img src="images/number-cake.webp" alt="" class="img-fluid"></figure></a>
+                <h5>NUMBER CAKES</h5>
             </div>
         </div>
       </div>    
     </div>
-    <div class="meen">
-      <div class="container">
-        <div class="row">
-          <div class="nobita col-lg-2 col-md-6 col-sm-12">
-            <a href="#"><img src="images/Small_Ones-_05_480x123.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-2 col-md-6 col-sm-12">
-            <a href="#"><img src="images/Small_Ones-_02_480x12345.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-2 col-md-6 col-sm-12">
-            <a href="#"><img src="images/Small_Ones-_01_480x1234.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-2 col-md-6 col-sm-12">
-            <a href="#"><img src="images/Small_Ones-_05_480x123.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-2 col-md-12 col-sm-12">
-            <a href="#"><img src="images/Small_Ones-_06_480x12345678.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-2 col-md-12 col-sm-12">
-            <a href="#"><img src="images/Small_Ones-_03_480x123456.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-3 col-md-12 col-sm-12">
-            <a href="#"><img src="images/Big_Ones-01_480x115.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-3 col-md-12 col-sm-12">
-            <a href="#"><img src="images/Big_Ones-04_480x114.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-3 col-md-12 col-sm-12">
-            <a href="#"><img src="images/Big_Ones-02_480x113.webp" alt="" class="img-fluid"></a>
-          </div>
-          <div class="nobita col-lg-3 col-md-12 col-sm-12">
-            <a href="#"><img src="images/Big_Ones-03_480x112.webp" alt="" class="img-fluid"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="something managehh ">
+    <div class="something managehh cent ">
       <div class="container">
           <div class="row">
-            <h1>Looking For Something Else </h1>
-            <div class=" grow about_something col-lg-4 col-md-12 col-sm-12 mt-5 mb-5">
-              <a href="#"><img src="images/jar_cakes_2.webp" alt="" class="img-fluid"></a>
+            <h1>LOOKING FOR SOMETHING ELSE </h1>
+            <div class=" hover01 col-lg-4 col-md-12 col-sm-12 mt-5 mb-5">
+              <a href="#"><figure><img src="images/jar_cakes_2.webp" alt="" class="img-fluid"></figure></a>
             </div>
-            <div class="grow about_something col-lg-4 col-md-12 col-sm-12 mt-5 mb-5">
-              <a href="#"><img src="images/pastries_3.webp" alt="" class="img-fluid"></a>
+            <div class="hover01 col-lg-4 col-md-12 col-sm-12 mt-5 mb-5">
+              <a href="#"><figure><img src="images/pastries_3.webp" alt="" class="img-fluid"></figure></a>
             </div>
-            <d  iv class="grow about_something col-lg-4 col-md-12 col-sm-12 mt-5 mb-5">
-              <a href="#"><img src="images/hampers.webp" alt="" class="img-fluid"></a>
+            <d  iv class="hover01 col-lg-4 col-md-12 col-sm-12 mt-5 mb-5">
+              <a href="#"><figure><img src="images/hampers.webp" alt="" class="img-fluid"></figure></a>
             </div>
           </div>
       </div>
@@ -212,14 +207,14 @@
     <div class="occasion managehh">
       <div class="container">
           <div class="row">
-            <h1>Celebrate Special Occasions</h1>
-            <div class="about_occasion col-lg-6 col-md-6 col-sm-12 mt-5 shrink">
-              <img src="images/Birthday_web.jpg" alt="" class="img-fluid">
-              <h5>Birthday</h5>
+            <h1>CELEBRATE SPECIAL OCCASIONS</h1>
+            <div class="hover01 col-lg-6 col-md-6 col-sm-12 mt-5 ">
+              <figure><img src="images/Birthday_web.jpg" alt="" class="img-fluid"></figure>
+              <h5>BIRTHDAY</h5>
             </div>
-            <div class="about_occasion col-lg-6 col-md-6 col-sm-12 mt-5 shrink">
-              <img src="images/Anniversary_web.webp" alt="" class="img-fluid">
-              <h5>Anniversary</h5>
+            <div class=" col-lg-6 col-md-6 col-sm-12 mt-5 hover01">
+              <figure><img src="images/Anniversary_web.webp" alt="" class="img-fluid"></figure>
+              <h5>ANNIVERSARY</h5>
           </div>
         </div>
       </div>
@@ -236,7 +231,7 @@
               <form action="/action_page.php">
                 <div class="row12">
                   <div class="col-25">
-                    <label for="fname">Name</label>
+                    <label for="fname">NAME</label>
                   </div>
                   <div class="col-75">
                     <input type="text" id="fname" name="name" placeholder="Your name..">
@@ -244,7 +239,7 @@
                 </div>
                 <div class="row12">
                   <div class="col-25">
-                    <label for="lname">Your order</label>
+                    <label for="lname">YOUR ORDER</label>
                   </div>
                   <div class="col-75">
                 <input type="text" id="lname" name="lastname" placeholder="Your order..">
@@ -252,7 +247,7 @@
             </div>
             <div class="row12">
               <div class="col-25">
-                <label for="City">City</label>
+                <label for="City">CITY</label>
               </div>
               <div class="col-75">
                 <select id="City" name="City">
@@ -264,12 +259,12 @@
             </div>
             <div class="row12">
               <div class="col-25">
-                <label for="subject">Subject</label>
+                <label for="subject">SUGGESTIONS</label>
               </div>
               <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:125px"></textarea>
               </div>
-            </div>
+            </div><br>
             <div class="row12">
               <input type="submit" value="Submit">
             </div>
@@ -279,9 +274,7 @@
       </div>
     </div>
   <div class="futabove">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="container my-5">
+        <div class=" my-5">
 
           <!-- Footer -->
           <footer
@@ -332,7 +325,7 @@
                   <!-- Grid column -->
                   <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
-                    <h6 class="text-uppercase fw-bold">Company name</h6>
+                    <h6 class="text-uppercase fw-bold">Bakkery</h6>
                     <hr
                         class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px"
@@ -354,16 +347,16 @@
                         style="width: 60px; background-color: #7c4dff; height: 2px"
                         />
                     <p>
-                      <a href="#!" class="text-white">MDBootstrap</a>
+                      <a href="#!" class="text-white">Regularcakes</a>
                     </p>
                     <p>
-                      <a href="#!" class="text-white">MDWordPress</a>
+                      <a href="#!" class="text-white">Photocakes</a>
                     </p>
                     <p>
-                      <a href="#!" class="text-white">BrandFlow</a>
+                      <a href="#!" class="text-white">Flavoredcakes</a>
                     </p>
                     <p>
-                      <a href="#!" class="text-white">Bootstrap Angular</a>
+                      <a href="#!" class="text-white">Designercakes</a>
                     </p>
                   </div>
                   <!-- Grid column -->
@@ -399,10 +392,10 @@
                         class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px"
                         />
-                    <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                    <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                    <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    <p><i class="fas fa-home mr-3"></i> Dewas,INDIA</p>
+                    <p><i class="fas fa-envelope mr-3"></i> bakkery.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +9100000-00000</p>
+                    <p><i class="fas fa-print mr-3"></i> +9100000-00000</p>
                   </div>
                   <!-- Grid column -->
                 </div>
@@ -416,9 +409,9 @@
                  class="text-center p-3"
                  style="background-color: rgba(0, 0, 0, 0.2)"
                  >
-              © 2020 Copyright:
-              <a class="text-white" href="https://mdbootstrap.com/"
-                 >MDBootstrap.com</a
+              © 2024:
+              <a class="text-white" href="#"
+                 >Lalit</a
                 >
             </div>
             <!-- Copyright -->
@@ -427,10 +420,13 @@
         
         </div>
         <!-- End of .container -->
-      </div>
-    </div>
+      
   </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>

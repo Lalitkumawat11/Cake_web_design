@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px 0px;
     box-sizing: border-box;
-    
+    font-family: 'Pacifico', cursive;
     }
 
   
@@ -10,14 +10,9 @@
     text-align: center;
   }
 
-.navbar{
-  background-color: #1c2331
-}
+
 .hover01{
   overflow: hidden;
-}
-.navbar a{
-  color: whitesmoke;
 }
 .futabove{
     margin: 0;
